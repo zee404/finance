@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 
 def index(request):
-    return render(request, 'base.html')
+    return render(request, 'users.html')
 
 
 def users_view(request):
