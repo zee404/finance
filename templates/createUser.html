@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main_content %}
+    <div class="container-fluid mt-xl-50 mt-sm-30 mt-15">
+        <section class="hk-sec-wrapper">
+            <h5 class="hk-sec-title mb-30">Create User</h5>
+
+            {#    FORM        #}
+            <div class="row">
+            <div class="col-6 col-md-4">
+                <label for="firstName">First name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="First name"
+                       value="" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                 <label for="Email" class="mt-10">Email</label>
+                <input type="text" class="form-control" id="Email" placeholder="Email"
+                       value="" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                 <label for="password" class="mt-10">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="password"
+                       value="" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                 <label for="passwordConfirmation" class="mt-10">Password Confirmation</label>
+                <input type="password" class="form-control" id="passwordConfirmation" placeholder="Confirm password"
+                       value="" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                
+                <div class="custom-control custom-checkbox mt-10">
+                    <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+                    <label class="custom-control-label" for="customControlValidation1">Reset password on login</label>
+                    <div class="invalid-feedback"> check this..</div>
+                </div>
+                
+                <div class="custom-control custom-checkbox mt-10">
+                    <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+                    <label class="custom-control-label" for="customControlValidation1">Send Login Details</label>
+                    <div class="invalid-feedback"> check this..</div>
+                </div>
+                <label for="about" class="mt-35">About</label>
+                <textarea class="form-control mt-10" rows="3" placeholder=""></textarea>
+            </div>
+
+            <div class="col-6 col-md-4">
+
+                 <label for="lastname">Last name</label>
+                <input type="text" class="form-control" id="lastname" placeholder="Last name"
+                       value="" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                 <label for="jobtitle" class="mt-10">Job Title</label>
+                <input type="text" class="form-control" id="jobtitle" placeholder="Job title"
+                       value="" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                 <label for="countrycode" class="mt-10">Country Code</label>
+                <input type="text" class="form-control" id="countrycode" placeholder="Country code"
+                       value="" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                 <label for="cellphone" class="mt-10">Cell Phone</label>
+                <input type="text" class="form-control" id="cellphone" placeholder="cell phone"
+                       value="" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                 <label for="Classification" class="mt-10">Classification</label>
+                 <div class="form-group">
+                    <select class="form-control custom-select" required>
+                        <option value="">Classification</option>
+                        <option value="1">Standard</option>
+                        <option value="2">Silver</option>
+                        <option value="3">Gold</option>
+                    </select>
+                    <div class="invalid-feedback">please Select Classification</div>
+                </div>
+                
+                <label for="roles" class="mt-10">Roles</label>
+                <div class="row ml-10">
+                    <div class="custom-control custom-checkbox mt-10">
+                        <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+                        <label class="custom-control-label" for="customControlValidation1">Super User</label>
+                        <div class="invalid-feedback"> check this..</div>
+                    </div>
+                    <div class="custom-control custom-checkbox mt-10 ml-10">
+                        <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+                        <label class="custom-control-label" for="customControlValidation1">Member</label>
+                        <div class="invalid-feedback"> check this..</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                 <label for="validationCustom02">Picture</label>
+                 <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                    <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                    <div class="invalid-feedback">Please choose picture</div>
+                </div>
+                <div class="avatar avatar-xl mt-15">
+                    <img src="{% static  'img/avatar3.jpg' %}" alt="user" class="avatar-img rounded-circle">
+                </div>
+            </div>
+            </div>
+             <div class="col-12">
+            <div class="row mt-20 justify-content-end">
+           
+                
+                <button class="btn btn-primary" type="submit">Create User</button>
+                <button class="btn btn-danger ml-10" type="submit">Cancel</button>
+            </div>
+            </div>
+             </section>
+    </div>
+
+{% endblock main_content %}

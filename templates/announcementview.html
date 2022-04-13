@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main_content %}
+    <div class="container-fluid mt-xl-50 mt-sm-30 mt-15">
+        <div class="row justify-content-between mb-10">
+            <div class="col-lg-6">
+                <h3> Announcements</h3>
+            </div>
+            <div class="col-lg-6 text-right">
+                <button type="button" class="btn btn-success"><a href="{% url "create_role" %}">Create</a></button>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <section class="hk-sec-wrapper pt-40">
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="table-wrap">
+
+                                <table id="datable_1" class="table table-hover w-100 display pb-30">
+                                    <thead class="thead-info">
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Starts at</th>
+                                        <th>Ends at</th>
+                                        <th>is Public</th>
+                                        <th>Show immediately</th>
+                                        <th>Show in URL</th>
+                                        <th>Created at</th>
+                                        <th>updated at</th>
+                                        <th>Action</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+
+                                        <td><a href="{% url 'userdetail' %}">50% Discount Summer Sale on All Laraship Products</a></td>
+                                        <td>06 Nov,2020</td>
+                                        <td>14 Nov,2020</td>
+                                        <td><i class="fa fa-check"></i></td>
+                                        <td><i class="fa fa-minus"></i></td>
+                                         <td></td>
+                                        <td>06 Nov,2020</td>
+                                        <td>06 Nov,2020</td>
+                                        <td>
+                                            <div class="inline-block dropdown">
+                                                <a class="dropdown-toggle no-caret" data-toggle="dropdown"
+                                                   href="#" aria-expanded="false" role="button"><i
+                                                        class="icon-options-vertical"></i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <a class="dropdown-item fa fa-edit" href="#">
+                                                        Edit</a>
+                                                    <a class="dropdown-item fa fa-remove" href="#">
+                                                        Delete</a>
+                                                    <a class="dropdown-item fa fa-history" href="#">
+                                                        Logs</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+
+                                        <td><a href="{% url 'userdetail' %}">This Popup is a Demo of Laraship Announcement Module</a></td>
+                                        <td>06 Nov,2020</td>
+                                        <td>14 Nov,2020</td>
+                                        <td><i class="fa fa-check"></i></td>
+                                        <td><i class="fa fa-minus"></i></td>
+                                         <td></td>
+                                        <td>06 Nov,2020</td>
+                                        <td>06 Nov,2020</td>
+                                        <td>
+                                            <div class="inline-block dropdown">
+                                                <a class="dropdown-toggle no-caret" data-toggle="dropdown"
+                                                   href="#" aria-expanded="false" role="button"><i
+                                                        class="icon-options-vertical"></i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <a class="dropdown-item fa fa-edit" href="#">
+                                                        Edit</a>
+                                                    <a class="dropdown-item fa fa-remove" href="#">
+                                                        Delete</a>
+                                                    <a class="dropdown-item fa fa-history" href="#">
+                                                        Logs</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    </tbody>
+                                    <tfoot class="thead-light">
+                                    <tr>
+                                         <th>Title</th>
+                                        <th>Starts at</th>
+                                        <th>Ends at</th>
+                                        <th>is Public</th>
+                                        <th>Show immediately</th>
+                                        <th>Show in URL</th>
+                                        <th>Created at</th>
+                                        <th>updated at</th>
+                                        <th>Action</th>
+                                    </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+{% endblock main_content %}

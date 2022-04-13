@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main_content %}
+            <div class="container-fluid mt-xl-50 mt-sm-30 mt-15">
+                <div class="row mb-20">
+                    <div class="col-lg-6">
+                        <h3> John Doe</h3>
+                    </div>
+                    <div class="col-lg-6 text-right">
+                        <button type="button" class="btn btn-warning" > <a href="{% url "createuser" %}">Edit</a></button>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 ">
+                        <div class="card mb-20 text-center">
+                            <div class="inline-block dropdown mr-15 mt-10" align="right" >
+                                <a class="dropdown-toggle no-caret" data-toggle="dropdown" href="dashboard2.html#" aria-expanded="false" role="button"><i class="icon-options-vertical"></i></a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item fa fa-edit" href="dashboard2.html#">  Edit</a>
+                                    <a class="dropdown-item fa fa-remove" href="dashboard2.html#">  Delete</a>
+                                    <a class="dropdown-item fa fa-history" href="dashboard2.html#">  Logs</a>
+                                </div>
+                                </div>
+                            <img class="circle mx-auto d-block mt-10" src="{% static 'img/avatar3.jpg' %}" alt="Card image cap" height="300px" width="300">
+                            <div class="card-body">
+                                <h4 class="card-title">John Doe</h4>
+                                <h5 class="card-text">johndoe@gmail.com</h5>
+                                <p class="card-text">sinc 04 Mar,2021</p>
+                                <p class="card-text"> <span class="badge badge-success mt-15 mr-10">Super user</span>  <span class="badge badge-success mt-15 mr-10">Member</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card">
+                            <h5 class="card-header">
+                                <i class="fa fa-diamond"> </i>    Subscription
+                                </h5>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <img src="{% static 'img/laraship.png' %}" class="img-fluid" alt="img">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <p class="display-5">Subscriptions:</p>
+                                        <p class="card-text">Not Subscribed Yet</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+{%  endblock main_content %}
